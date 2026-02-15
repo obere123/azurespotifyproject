@@ -1,0 +1,9 @@
+{
+	"name": "spotifyADFobere",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "08927e69-22f1-4ccc-beb6-e882fecf6e93",
+		"tenantId": "95208d87-408e-4a2e-9061-e32cf039ae9f"
+	}
+}
