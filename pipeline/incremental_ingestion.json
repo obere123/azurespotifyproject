@@ -110,7 +110,7 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": {
-								"value": "@{trim(pipeline().parameters.table)}_cdc ",
+								"value": "@concat(trim(pipeline().parameters.table), '_cdc')\n",
 								"type": "Expression"
 							},
 							"file": "cdc.json"
@@ -378,7 +378,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "bronze",
-										"folder": "cdc",
+										"folder": "@concat(trim(pipeline().parameters.table), '_cdc')",
 										"file": "empty.json"
 									}
 								}
